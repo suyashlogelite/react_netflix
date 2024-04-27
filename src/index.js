@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDom from "react-dom";
 import Cards from "./Card";
+import Data from "./Data";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 
 ReactDom.render(
   <>
+    {console.log(Data)}
     <h1 className="card shadow text-center fw-bold">
       List Of Top Netflix Series in 2024
     </h1>
@@ -15,42 +17,42 @@ ReactDom.render(
       <div className="row d-flex justify-content-center">
         <div className="col-md-6">
           <Cards
-            imgsrc="https://wallpapercave.com/wp/wp11482775.jpg"
-            title="A Netflix Original Series"
-            sname="The Sandman"
-            link="https://www.netflix.com/in/title/81150303"
+            imgsrc={Data[0].imgsrc}
+            title={Data[0].title}
+            sname={Data[0].sname}
+            link={Data[0].link}
           />
           <Cards
-            imgsrc="https://wallpapercave.com/wp/wp11370751.jpg"
-            title="A Netflix Original Series"
-            sname="The Dark Night"
-            link="https://www.netflix.com/in/title/70079583"
+            imgsrc={Data[1].imgsrc}
+            title={Data[1].title}
+            sname={Data[1].sname}
+            link={Data[1].link}
           />
           <Cards
-            imgsrc="https://wallpapercave.com/wp/wp3920147.jpg"
-            title="A Netflix Original Series"
-            sname="DareDevil"
-            link="https://www.netflix.com/in/title/80018294"
+            imgsrc={Data[2].imgsrc}
+            title={Data[2].title}
+            sname={Data[2].sname}
+            link={Data[2].link}
           />
         </div>
         <div className="col-md-6">
           <Cards
-            imgsrc="https://wallpapercave.com/wp/wp5913975.jpg"
-            title="A Netflix Original Series"
-            sname="Stranger Things"
-            link="https://www.netflix.com/in/title/80057281"
+            imgsrc={Data[3].imgsrc}
+            title={Data[3].title}
+            sname={Data[3].sname}
+            link={Data[3].link}
           />
           <Cards
-            imgsrc="https://wallpapercave.com/wp/wp8275549.jpg"
-            title="A Netflix Original Series"
-            sname="Vikings"
-            link="https://www.netflix.com/in/title/70301870"
+            imgsrc={Data[4].imgsrc}
+            title={Data[4].title}
+            sname={Data[4].sname}
+            link={Data[4].link}
           />
           <Cards
-            imgsrc="https://wallpapercave.com/wp/wp12657507.jpg"
-            title="A Netflix Original Series"
-            sname="Dexter"
-            link="https://www.netflix.com/in/title/70136126"
+            imgsrc={Data[5].imgsrc}
+            title={Data[5].title}
+            sname={Data[5].sname}
+            link={Data[5].link}
           />
         </div>
       </div>
